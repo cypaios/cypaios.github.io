@@ -1,14 +1,10 @@
 function setup() {
-    createCanvas(400, 400);
+    createCanvas(displayWidth, displayHeight);
+   strokeWeight(10)
+   stroke(0);
 }
 
-function draw()
-{
-   // do nothing
-}
-
-function mouseDragged() 
-{ 
-   strokeWeight(10);
+function touchMoved() {
    line(mouseX, mouseY, pmouseX, pmouseY);
+   return false;
 }
